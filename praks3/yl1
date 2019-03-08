@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+echo -n "Today is " # täna on
+date +"%A, %B %d, %Y" # kuupäev
+echo -n "Time is "
+date +%T
+echo -n "Calendar of"
+cal
+#
