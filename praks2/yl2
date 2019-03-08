@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# enese tutvustus
+#
+echo "Rasmus-Joonatan Ujuk" # enda nimi
+echo "ISP118" # õppegrupp
+echo "Aine tundub arusaadav" # kuidas aine tundub
+echo "Tunnen ennast hästi ja arvan, et saab selle ainega hakkama" # praegune mulje
+#
+# skripti lõpp
