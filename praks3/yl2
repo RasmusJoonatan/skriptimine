@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+find /var -name "*.log" -type f 2>/dev/null -exec wc -l {} \+ | sort -n -r # otib kõike fail-id mis lõppevad .log-iga ja sorteerib suuremast väiksemani
+#
+# skripti lõpp
+#dfadf
