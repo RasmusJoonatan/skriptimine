@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# tervitame inimest
+echo "sisesta oma ees- ja perenimi"
+read nimed # sisesta oma ees- ja perenimi
+echo Tere tulemast $nimed
+#
+# skripti lõpp
+
