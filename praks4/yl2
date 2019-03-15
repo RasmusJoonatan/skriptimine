@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+echo "aluskandiku pikkus cm-tes" # küsib aluskandiku pikkus cm-tes
+read akp # nimetab vastust akp
+echo "aluskandiku lauis cm-tes" # küsib aluskandiku laius cm-tes
+read akl # nimetab vastust akl
+echo "küpsiste suurus cm-tes" # küsib küpsiste suurus cm-tes
+read ks # nimetab vastust ks
+echo "mitme kihiline tort" # küsib mitme kihiline tort
+read mk # nimetab vastust mk
+echo "mitu küpsist ühes pakis" # küsib mitu küpisit ühes pakis
+read mkp # nimetab vastust mkp
+pakk_arv=`expr $akp / $ks + $akl / $ks \* $mk / $mkp` # vastab, et on vaja# arvutab mitu pakki küpsist on vaja
+echo -n "on vaja $pakk_arv pakki küpsist ja lisaks "
+lisaks=`expr $mk % $mkp`
+echo "$lisaks küpsist" # vastab pakki küpsist ja lisaks# arvutab mitu lisa küpsist on vaja
+#
+#skripti lõpp
