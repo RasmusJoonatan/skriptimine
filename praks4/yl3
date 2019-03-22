@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+echo "mitu reisijat on grupis"
+read reisijad
+echo "mitu kohta on bussis"
+read kohad
+kohtade_arv=`expr $kohad / $reisijad`
+kohad2=`expr $kohad % $reisijad`
+echo "on vaja $kohtade_arv bussi ja $kohad2 reisijat jaab yle"
+echo "Kui busside arv = 0 siis lisa kaks bussi"
+#
+#
