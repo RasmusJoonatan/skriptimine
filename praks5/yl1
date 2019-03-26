@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+echo -n "külg A=" #küsin A külje suurust
+read A
+echo -n "külg B=" #küsin B külje suurust
+read B
+BSquared=$(($B**2)) #panen B-d ruutu
+ASquared=$(($A**2)) #panen A-d ruutu
+CSquared=$(($BSquared+$ASquared)) #arvutan C-d
+
+
+echo "A= $A" #kirjutan välja A külje
+echo "B= $B" #kirjutan välja B külje
+echo -n "C= " #kirjutan välja Ckülje
+echo "scale=2;sqrt($CSquared)"|bc # kirjutan välja C külje
+#
+#skripti lõpp
