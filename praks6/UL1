@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+echo  "sisesta suvaline täisarv"
+read arv
+jaak=$(( $arv % 2 ))
+if [ $jaak = 0 ]
+then
+echo "$arv on paaris"
+else
+echo "$arv on paaritu"
+fi # tingimus kontroll on lõppenud
+
+#
+# skripti lopp
