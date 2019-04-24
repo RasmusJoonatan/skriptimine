@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+echo "mitu reisijat on grupis" # saame teada kui palju reisijaid on
+read reisijad
+echo "mitu kohta on bussis" # saame teada kui palju kohti on bussis
+read kohad
+bussid=$(($reisijad / $kohad)) # jagame reisijaid kohtade arvuga
+ylejaanud=$(($reisijad % $kohad)) # vaatame kui palju inimesi jääb üle
+if test $ylejaanud -gt 0
+then
+bussid=$(($bussid + 1))
+fi # tulemuste valjustaminie
+echo "kokku on vaja $bussid tasibussi"
+#
+# skripti lopp
