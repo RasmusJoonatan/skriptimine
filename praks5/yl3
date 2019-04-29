@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+echo "Pyhapaev -0;
+Esmaspaev - 1;
+Teisipaev - 2;
+Kolmapaev - 3;
+Neljapaev - 4;
+Reede - 5;
+Laupaev - 6.;"
+
+echo -n "Sisesta millal soidad ara: "
+read paev
+echo -n "Sisesta oppaeva arv: "
+read oopaev
+
+paevad=$(($oopaev % 7))
+vastus=$(($paev + $paevad))
+
+echo "Tagasi oled paeval number $vastus."
+#
+# skripti lopp
