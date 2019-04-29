@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+echo -n "Sisesta a kylje vaartus: "
+read a
+echo -n "Sisesta b kylje vaartus: "
+read b
+echo -n "Sisesta c kylje vaartus. "
+read c
+
+p=$(bc <<< "scale=2;($a+$b+$c)/2")
+S=$(bc <<< "scale=3;sqrt($p * ($p - $a) *($p - $b) * ($p - $c))")
+
+echo "Pindala =" $S "ruutsentimeetrit"
+
+#
+# skripti lopp
