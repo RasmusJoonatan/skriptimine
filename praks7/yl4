@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+echo -e "Sisesta tunni aeg \c"
+read aeg
+if [ $aeg -ge 6 -a $aeg -lt 12 ]
+then
+echo -n "Tere hommikust, "
+id -u -n
+elif [ $aeg -ge 12 -a $aeg -lt 18 ]
+then
+echo -n "Tere paevast, "
+id -u -n
+elif [ $aeg -ge 18 -a $aeg -lt 22 ]
+then
+echo -n "Tere ohtust, "
+id -u -n
+elif [ $aeg -ge 22 -a $aeg -lt 24 ] || [ $aeg -ge 0 -a $aeg -lt 6 ]
+then
+echo -n "Head ood, "
+id -u -n
+else
+echo "vigane sisend"
+fi
+#
+# skripti lopp
