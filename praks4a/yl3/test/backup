@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+read -p "Sisestage katalogi nimi mida tahad kokku suruda: " katalooginimi
+baasnimi="$(basename $katalooginimi)"
+asukoht="/home/user/skriptimine/praks4a/yl3/backup/$baasnimi.backup.tar.gz"
+tar -zcvf $asukoht $katalooginimi
+echo "Kataloogi $katalooginimi backup'i nimi on $baasnimi.backup .tar.gz ja ta asub $asukoht."
+
+#
+# skripti lopp
