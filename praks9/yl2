@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+echo -n "sisesta ridade arv: ";
+read read1
+echo -n "Sisesta tarnide arv reas: ";
+read tarnid
+reanum=1
+for (( i = 1; i <=read1; i++ ))
+do
+echo -n "$reanum."
+let reanum++
+for (( j = 1; j <=tarnid; j++ ))
+do
+echo -n "* "
+done
+echo ""
+done
+#
+# skripti lõpp
