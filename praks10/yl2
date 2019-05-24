@@ -1,0 +1,45 @@
+#!/bin/bash
+#
+echo -n "Sisesta kuu number: "# sisesta kuu number
+read kuu
+if test $kuu == 1
+then
+echo "Praegu on talv"# on talv
+elif test $kuu == 2
+then
+echo "Praegu on talv"# on talv
+elif test $kuu == 3
+then
+echo "Praegu on kevad"# on kevad
+elif test $kuu == 4
+then
+echo "Praegu on kevad"# on kevad
+elif test $kuu == 5
+then
+echo "Praegu on kevad"# on kevad
+elif test $kuu == 6
+then
+echo "praegu on suvi"# on suvi
+elif test $kuu == 7
+then
+echo "Praegu on suvi"# on suvi
+elif test $kuu == 8
+then
+echo "Praegu on suvi"# on suvi
+elif test $kuu == 9
+then
+echo "Praegu on sügis"# on sügis
+elif test $kuu == 10
+then
+echo "Praegu on sügis"# on sügis
+elif test $kuu == 11
+then
+echo "Praegu on sügis"# on sügis
+elif test $kuu == 12
+then
+echo "Praegu on talv"# on talv
+else
+echo "Vigane sisend"# vigane sisend
+fi
+#
+# skripti lõpp
