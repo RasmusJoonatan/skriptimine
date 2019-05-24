@@ -1,20 +1,20 @@
 #!/bin/bash
 #
-aeg=$(date +%H)
-nimi=$( whoami )
-if [ $aeg -ge 6 -a $aeg -lt 12 ];
+aeg=$(date +%H) # aeg
+nimi=$( whoami ) #kes ma olen
+if [ $aeg -ge 6 -a $aeg -lt 12 ]; # ajavahemik
 then
 echo "Tere hommikust, $nimi!"
-elif [ $aeg -ge 12 -a $aeg -lt 18 ];
+elif [ $aeg -ge 12 -a $aeg -lt 18 ]; # ajavahemik
 then
 echo "Tere paevast, $nimi!"
-elif [ $aeg -ge 18 -a $aeg -lt 22 ];
+elif [ $aeg -ge 18 -a $aeg -lt 22 ]; # ajavahemik
 then
 echo "Tere ohtust, $nimi!"
-elif [ $aeg -ge 22 -a $aeg -lt 24 ];
+elif [ $aeg -ge 22 -a $aeg -lt 24 ]; # ajavahemik
 then
 echo "Head ood, $nimi!"
-elif [ $aeg -ge 0 -a $aeg -lt 6 ];
+elif [ $aeg -ge 0 -a $aeg -lt 6 ]; # ajavahemik
 then
 echo "Head ood, $nimi!"
 else
