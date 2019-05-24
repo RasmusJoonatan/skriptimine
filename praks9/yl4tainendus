@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+
+echo -n "Sisesta ridade arv: ";
+read read1
+reanum=1
+
+for (( i = 1; i <=$read1; i++ ))
+do
+echo -n "$reanum."
+tarne=$(($read1 + 1 - $i))
+let reanum++
+for (( j = 1; j <= $tarne; j++ ))
+do
+echo -n "* "
+done
+echo ""
+done
+#
+# skripti lopp
